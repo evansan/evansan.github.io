@@ -17,3 +17,5 @@ if [ "$1" == "um" ]; then
     
 fi
 
+echo "Hello."O
+
