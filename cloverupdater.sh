@@ -1,0 +1,1 @@
+/Users/wei/bin/cloverupdater.sh
