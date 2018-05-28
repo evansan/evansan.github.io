@@ -1,5 +1,4 @@
 #!/bin/zsh
-git pull
 export QT_QMAKE=/usr/local/Cellar/qt/5.10.1/bin
 ./configure
 make -j 4
