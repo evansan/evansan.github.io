@@ -17,7 +17,7 @@ echo "Expand the pkg file"
 cd /tmp/pkg/EFIFolder.pkg
 echo "Change directory into EFIFolder.pkg"
 
-tar xvf Payload
+tar xzf Payload
 echo "unpacking the payload"
 
 diskutil mount $efiguid 
@@ -34,5 +34,6 @@ diskutil umount $efiguid
 
 rm /tmp/Clover_*.pkg
 echo "Remove the pkg file"
-
+rm -R /tmp/pkg/
+echo "Remove the pkg folder"
 exit 0
