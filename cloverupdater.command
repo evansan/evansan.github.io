@@ -8,8 +8,11 @@ echo "Get the lastest download link"
 efiguid=`bdmesg | grep  " self device " | grep -o ........-....-....-....-............`
 echo "Get Booted EFI Partition's GUID"
 
-aria2c -x 2 $dnlink 
-echo "Download the pkg file"
+aria2c -q -x 2 $dnlink
+dnclover=`ls | grep -e Clover`
+echo "Download $dnclover"
+
+dnclover=`ls | grep -e Clover`
 
 pkgutil --expand *.pkg ./pkg
 echo "Expand the pkg file"
